@@ -25,7 +25,7 @@ public class ArchivoEscritura {
         return nombreArchivo;
     }
     
-    public String obtenereDataFinal(){
+    public String obtenerDataFinal(){
         return dataFinal;
     }
     
@@ -37,7 +37,7 @@ public class ArchivoEscritura {
                     obtenerNombreArchivo());
             salidaArchivo = new Formatter(rutaArchivo);
             
-            salidaArchivo.format("%s", obtenereDataFinal());
+            salidaArchivo.format("%s", obtenerDataFinal());
             salidaArchivo.close();
 
         } catch (Exception e) {

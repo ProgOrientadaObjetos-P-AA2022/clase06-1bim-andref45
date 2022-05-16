@@ -22,19 +22,19 @@ public class Ejecutor {
         // Inicio de proceso iterativo 
         bandera = true;
         while (bandera) { // bandera == true
-            System.out.println("Ingrese el nombre del vendedor");
+            System.out.println("Ingrese el nombre del vendedor:");
             nombre = entrada.nextLine();
             System.out.println("Ingrese edad del vendedor");
             edad = entrada.nextInt();
-            System.out.println("Ingrese el salario mínimo");
+            System.out.println("Ingrese el salario mínimo:");
             sMinino = entrada.nextDouble();
-            System.out.println("Ingrese el número de autos vendidos");
+            System.out.println("Ingrese el número de autos vendidos:");
             autos = entrada.nextInt();
 
             // con los datos ingresados se crea el objeto de tipo Vendedor
             Vendedor v = new Vendedor(nombre, edad, sMinino, autos);
             v.calcularPagoMensual();
-            System.out.printf("Datos de Vendedor\n"
+            System.out.printf("Datos de Vendedor:\n"
                     + "Nombre: %s\n"
                     + "Edad: %s\n"
                     + "Salario mínimo: %.2f\n"
@@ -45,7 +45,7 @@ public class Ejecutor {
 
             entrada.nextLine(); // limpieza del buffer
             System.out.println("Desea ingresar más vendedores. Ingrese n para"
-                    + "salir");
+                    + " salir");
             opcion = entrada.nextLine();
             if (opcion.equals("n")) {
                 bandera = false;
